@@ -1,0 +1,111 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-4.3.xsd
+http://www.springframework.org/schema/mvc
+http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+ 
+	<context:component-scan base-package="logistics.wms.controllers" />
+ 
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/views/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+	
+	<mvc:resources mapping="/resources/**" location="/resources/"/>
+
+    <mvc:annotation-driven />
+   
+	<bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">  
+<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"></property>  
+<property name="url" value="jdbc:sqlserver://localhost:1433;databaseName=Logistics_Integrated;"></property>   
+</bean>  
+
+
+  
+<bean id="jt" class="org.springframework.jdbc.core.JdbcTemplate">  
+<property name="dataSource" ref="ds"></property>  
+</bean>  
+
+<bean id="warehouseDao" class="logistics.wms.dao.WarehouseDao">
+<property name="template" ref="jt"></property>
+</bean>
+	
+<bean id="receiveItemDao" class="logistics.wms.dao.ReceiveItemDao">
+<property name="template" ref="jt"></property>
+</bean>
+
+
+<bean id="inspectItemDao" class="logistics.wms.dao.InspectItemDao">
+<property name="template" ref="jt"></property>
+</bean>
+<bean id="warehouseItemDao" class="logistics.wms.dao.WarehouseItemDao">
+<property name="template" ref="jt"></property>
+</bean>
+
+<bean id="SetupDao" class="logistics.wms.dao.SetupDao">
+		<property name="template" ref="jt"></property>
+   </bean>
+	
+		<bean id="CustodianDao" class="logistics.wms.dao.CustodianDao">
+		<property name="template" ref="jt"></property>
+   </bean>
+   
+   <bean id="InspectionDao" class="logistics.wms.dao.InspectionDao">
+		<property name="template" ref="jt"></property>
+   </bean>
+   
+   <bean id="InspectedDao" class="logistics.wms.dao.InspectedDao">
+		<property name="template" ref="jt"></property>
+   </bean>
+
+
+<bean id="CategoryDao" class="logistics.wms.dao.CategoryDao">
+<property name="template" ref="jt"></property>
+</bean>
+
+<bean id="ItemDao" class="logistics.wms.dao.ItemDao">
+<property name="template" ref="jt"></property>
+</bean>
+
+<bean id="SupplierDao" class="logistics.wms.dao.SupplierDao">
+<property name="template" ref="jt"></property>
+</bean>
+
+<bean id="PrDao" class="logistics.wms.dao.PrDao">
+<property name="template" ref="jt"></property>
+</bean>
+
+<bean id="PoDao" class="logistics.wms.dao.PoDao">
+<property name="template" ref="jt"></property>
+</bean>
+
+<bean id="BiddingDao" class="logistics.wms.dao.BiddingDao">
+<property name="template" ref="jt"></property>
+</bean>
+
+<bean id="RfqDao" class="logistics.wms.dao.RfqDao">
+<property name="template" ref="jt"></property>
+</bean>
+
+<bean id="UomDao" class="logistics.wms.dao.UomDao">
+<property name="template" ref="jt"></property>
+</bean>
+
+<bean id="NoaDao" class="logistics.wms.dao.NoaDao">
+<property name="template" ref="jt"></property>
+</bean>
+
+
+
+</beans>
