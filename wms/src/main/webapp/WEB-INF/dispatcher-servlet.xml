@@ -28,7 +28,7 @@ http://www.springframework.org/schema/mvc/spring-mvc.xsd">
    
 	<bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">  
 <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"></property>  
-<property name="url" value="jdbc:sqlserver://localhost:1433;databaseName=Logistics_Integrated;"></property>   
+<property name="url" value="jdbc:sqlserver://localhost:1433;databaseName=Logistics_Integrated;integratedSecurity=true"></property>   
 </bean>  
 
 

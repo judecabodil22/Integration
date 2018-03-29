@@ -675,139 +675,142 @@
                        </li>
                        
                             
-                        <li>
-                            <a href="">
-                                <i class="livicon" data-name="money" data-size="18"  data-c="#ffffff" data-hc="#ffffff" data-loop="true"></i>
-                                <span class="title">Financials</span>
-                                <span class="fa arrow"></span>
-                            </a>
-                            
-                               <ul class="sub-menu">   
-                                    <li class="">
-                                        <a href="">
-                                        <i class="fa fa-angle-double-right"></i>
-                                        <span class="title">Journal Entry Voucher</span>
-                                        </a>
+                        <li><a href=""> <i class="livicon" data-name="money"
+								data-size="18" data-c="#ffffff" data-hc="#ffffff"
+								data-loop="true"></i> <span class="title">Financials</span> <span
+								class="fa arrow"></span>
+						</a>
 
-                                        <ul class = "sub-menu">
-                                            <li>
-                                                <a href="">
-                                                <i class="fa fa-angle-double-right"></i>
-                                                <span class="title">Create JEV</span>
-                                            </a>
-                                            </li>
+							<ul class="sub-menu">
+								<li class=""><a href=""> <i
+										class="fa fa-angle-double-right"></i> <span class="title">Journal
+											Entry Voucher</span>
+								</a>
 
-                                            <li>
-                                                <a href="">
-                                                <i class="fa fa-angle-double-right"></i>
-                                                <span class="title">Review JEV</span>
-                                            </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
+									<ul class="sub-menu">
+										<li>
+											<!-- <a href="${ctx}/JEV/create"> --> <a
+											href="financials_jevlist"> <i
+												class="fa fa-angle-double-right"></i> <span class="title">JEV
+													LIST</span>
+										</a>
+										</li>
 
-                                 <ul class="sub-menu">
-                                    <li class="">
-                                        <a href="">
-                                        <i class="fa fa-angle-double-right"></i>
-                                        <span class="title">Collections</span>
-                                        </a>
+										<li>
+											<!-- <a href="${ctx}/JEV/create"> --> <a
+											href="financials_createjev"> <i
+												class="fa fa-angle-double-right"></i> <span class="title">Create
+													JEV</span>
+										</a>
+										</li>
 
-                                        <ul class = "sub-menu">
-                                            <li>
-                                                <a href="">
-                                                <i class="fa fa-angle-double-right"></i>
-                                                <span class="title">Accounts Receivable</span>
-                                            </a>
-                                            </li>
+										<li><a href="${ctx}/JEV/list"> <i
+												class="fa fa-angle-double-right"></i> <span class="title">Review
+													JEV</span>
+										</a></li>
+									</ul></li>
+							</ul>
 
-                                            <li>
-                                                <a href="">
-                                                <i class="fa fa-angle-double-right"></i>
-                                                <span class="title">Collection</span>
-                                            </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
+							<ul class="sub-menu">
+								<li><a href=""> <i class="fa fa-angle-double-right"></i>
+										<span class="title">Collection</span>
+								</a></li>
+							</ul>
+							<ul class="sub-menu">
 
-                                <ul class="sub-menu">   
-                                    <li class="">
-                                        <a href="">
-                                        <i class="fa fa-angle-double-right"></i>
-                                        <span class="title">Disbursement</span>
-                                        </a>
+								<li><a href="financials_ctransac2"> <i
+										class="fa fa-angle-double-right"></i> <span class="title">Accounts
+											Receivable (Collections)</span>
+								</a></li>
 
-                                        <ul class = "sub-menu">
-                                            <li>
-                                                <a href="">
-                                                <i class="fa fa-angle-double-right"></i>
-                                                <span class="title">Accounts Payable</span>
-                                            </a>
-                                            </li>
+								<li><a href="financials_ctransac"> <i
+										class="fa fa-angle-double-right"></i> <span class="title">Casheiring</span>
+								</a></li>
 
-                                            <li>
-                                                <a href="">
-                                                <i class="fa fa-angle-double-right"></i>
-                                                <span class="title">Disbursement</span>
-                                            </a>
-                                            </li>
-                                         </ul>
-                                    </li>
-                                </ul>
-                                <ul class="sub-menu">   
-                                    <li class="">
-                                        <a href="">
-                                        <i class="fa fa-angle-double-right"></i>
-                                        <span class="title">Queries</span>
-                                        </a>
-                                    </li>
-                                 </ul>
-                                
-                                <ul class="sub-menu">   
-                                    <li class="">
-                                        <a href="">
-                                        <i class="fa fa-angle-double-right"></i>
-                                        <span class="title">Reports</span>
-                                        </a>
+								<li><a href="financials_Collected"> <i
+										class="fa fa-angle-double-right"></i> <span class="title">Collected
+											Accounts</span>
+								</a></li>
+							</ul></li>
 
-                                        <ul class="sub-menu">   
-                                            <li class="">
-                                            <a href="">
-                                                <i class="fa fa-angle-double-right"></i>
-                                                <span class="title">Trial Balance</span>
-                                            </a>
+						
+					</ul>
 
-                                        <ul class = "sub-menu">
-                                            <li>
-                                                <a href="">
-                                                <i class="fa fa-angle-double-right"></i>
-                                                <span class="title">Unadjasted Trial Balance</span>
-                                            </a>
-                                            </li>
+					<ul class="sub-menu">
+						<li class=""><a href="voucher_transaction"> <i
+								class="fa fa-angle-double-right"></i> <span class="title">Disbursement</span>
+						</a></li>
+					</ul>
 
-                                            <li>
-                                                <a href="">
-                                                <i class="fa fa-angle-double-right"></i>
-                                                <span class="title">Pre-Closing Trial Balance</span>
-                                            </a>
-                                            </li>
+					<!-- start of ap ar -->
+					<ul class="sub-menu">
+						<li class=""><a href=""> <i
+								class="fa fa-angle-double-right"></i> <span class="title">AP
+									/ AR</span>
+						</a>
 
-                                            <li>
-                                                <a href="">
-                                                <i class="fa fa-angle-double-right"></i>
-                                                <span class="title">Post-Closing Trial Balance</span>
-                                            </a>
-                                            </li>
-                                         </ul>
-                                    </li>
-                                </ul>
-                                    </li>
-                                </ul>      
-                            
-                       </li>
-                        </ul>
+							<ul class="sub-menu">
+								<li><a href="ap_create"> <i
+										class="fa fa-angle-double-right"></i> <span class="title">Create
+											Accounts &nbsp; &nbsp; &nbsp; &nbsp;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Payable</span>
+								</a></li>
+
+								<li><a href="ar_list"> <i
+										class="fa fa-angle-double-right"></i> <span class="title">List(Accounts
+											Receivable)</span>
+								</a></li>
+
+								<li><a href="ap_list"> <i
+										class="fa fa-angle-double-right"></i> <span class="title">List(Accounts
+											Payable)</span>
+								</a></li>
+							</ul></li>
+					</ul>
+					<!-- end of ap ar -->
+
+
+
+					<ul class="sub-menu">
+						<li class=""><a href=""> <i
+								class="fa fa-angle-double-right"></i> <span class="title">Queries</span>
+						</a></li>
+					</ul>
+
+					<ul class="sub-menu">
+						<li class=""><a href=""> <i
+								class="fa fa-angle-double-right"></i> <span class="title">Reports</span>
+						</a>
+
+							<ul class="sub-menu">
+								<li class=""><a href=""> <i
+										class="fa fa-angle-double-right"></i> <span class="title">Trial
+											Balance</span>
+								</a>
+
+									<ul class="sub-menu">
+										<li><a href="${ctx}/PDFUATB" target="_blank"> <i
+												class="fa fa-angle-double-right"></i> <span class="title">Unadjusted
+													Trial Balance</span>
+										</a></li>
+
+										<li><a href=""> <i class="fa fa-angle-double-right"></i>
+												<span class="title">Pre-Closing Trial Balance</span>
+										</a></li>
+
+										<li><a href=""> <i class="fa fa-angle-double-right"></i>
+												<span class="title">Post-Closing Trial Balance</span>
+										</a></li>
+									</ul></li>
+							</ul></li>
+					</ul>
+
+					
+
+
+
+
+                     
                        
                         
                         
